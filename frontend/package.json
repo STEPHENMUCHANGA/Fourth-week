@@ -1,32 +1,14 @@
 {
   "name": "smartlerner-frontend",
   "version": "1.0.0",
-<<<<<<< HEAD
-=======
   "type": "module",
->>>>>>> 5f23476 (Update new changes)
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1",
-    "axios": "^1.4.0"
-  },
-  "devDependencies": {
-    "vite": "^5.0.0",
-    "tailwindcss": "^3.4.3",
-    "postcss": "^8.4.38",
-    "autoprefixer": "^10.4.19",
-    "@vitejs/plugin-react": "^4.0.0"
-  }
-}
-=======
     "axios": "^1.4.0",
     "lucide-react": "^0.548.0",
     "react": "^18.2.0",
@@ -42,4 +24,3 @@
     "vite": "^7.1.12"
   }
 }
->>>>>>> 5f23476 (Update new changes)
