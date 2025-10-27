@@ -35,9 +35,9 @@ app.use(cookieParser());
 app.use(passport.initialize());
 
 // ✅ Routes
-const authRoutes = require('./src/routes/auth');
-const courseRoutes = require('./src/routes/courses');
-const lessonRoutes = require('./src/routes/lessons');
+const authRoutes = require('./routes/auth');
+const courseRoutes = require('./routes/courses');
+const lessonRoutes = require('./routes/lessons');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
