@@ -1,5 +1,5 @@
 {
-  "name": "smartlerner-backend",
+  "name": "fourthweek-backend",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -22,5 +22,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
+  },
+    "engines": {
+    "node": ">=18 <23"
   }
 }
