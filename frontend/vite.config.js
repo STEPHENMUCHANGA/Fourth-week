@@ -1,12 +1,25 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig({
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: '/', // ensures correct routing in production
+  base: '/', // ensures correct routing on Vercel
+
+  // Local dev server configuration
   server: {
     proxy: {
-      '/api': 'http://localhost:5000' // only used during local dev
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        secure: false
+      }
     }
-  }
-});
+  },
+
+  // Build options for Vercel deployment
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+  },
+}));
