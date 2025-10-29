@@ -1,27 +1,78 @@
-# SmartLerner_OAuth - MERN App with Google OAuth and Seed Script
+# MERN Stack Integration Assignment
 
-This archive contains a ready-to-run MERN starter project for SmartLerner with Google OAuth integration and a seed script.
+This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
 
-## Quick steps
+## Assignment Overview
 
-1. Backend
-   - cd backend
-   - cp .env.example .env and fill in MONGO_URI, JWT_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_CALLBACK_URL, FRONTEND_URL
-   - npm install
-   - npm run seed   # populates sample users, courses, lessons
-   - npm run dev
+You will build a blog application with the following features:
+1. RESTful API with Express.js and MongoDB
+2. React front-end with component architecture
+3. Full CRUD functionality for blog posts
+4. User authentication and authorization
+5. Advanced features like image uploads and comments
 
-2. Frontend
-   - cd frontend
-   - cp .env.example .env
-   - npm install
-   - npm run dev
+## Project Structure
 
-## OAuth flow (local)
-- Configure Google Cloud OAuth client with callback: http://localhost:5000/api/auth/google/callback
-- In Google Console add JavaScript origins: http://localhost:5173 and http://localhost:5000
-- When user clicks "Login with Google" they'll be redirected to Google, then back to frontend with token in querystring.
+```
+mern-blog/
+├── client/                 # React front-end
+│   ├── public/             # Static files
+│   ├── src/                # React source code
+│   │   ├── components/     # Reusable components
+│   │   ├── pages/          # Page components
+│   │   ├── hooks/          # Custom React hooks
+│   │   ├── services/       # API services
+│   │   ├── context/        # React context providers
+│   │   └── App.jsx         # Main application component
+│   └── package.json        # Client dependencies
+├── server/                 # Express.js back-end
+│   ├── config/             # Configuration files
+│   ├── controllers/        # Route controllers
+│   ├── models/             # Mongoose models
+│   ├── routes/             # API routes
+│   ├── middleware/         # Custom middleware
+│   ├── utils/              # Utility functions
+│   ├── server.js           # Main server file
+│   └── package.json        # Server dependencies
+└── README.md               # Project documentation
+```
 
-## Deployment
-- Backend: Deploy backend folder to Render. Set env vars on Render (MONGO_URI, JWT_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_CALLBACK_URL, FRONTEND_URL_PROD)
-- Frontend: Deploy frontend folder to Vercel. Set env var VITE_API_BASE_URL to your backend base (e.g., https://your-backend.onrender.com/api)
+## Getting Started
+
+1. Accept the GitHub Classroom assignment invitation
+2. Clone your personal repository that was created by GitHub Classroom
+3. Follow the setup instructions in the `Week4-Assignment.md` file
+4. Complete the tasks outlined in the assignment
+
+## Files Included
+
+- `Week4-Assignment.md`: Detailed assignment instructions
+- Starter code for both client and server:
+  - Basic project structure
+  - Configuration files
+  - Sample models and components
+
+## Requirements
+
+- Node.js (v18 or higher)
+- MongoDB (local installation or Atlas account)
+- npm or yarn
+- Git
+
+## Submission
+
+Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+
+1. Complete both the client and server portions of the application
+2. Implement all required API endpoints
+3. Create the necessary React components and hooks
+4. Document your API and setup process in the README.md
+5. Include screenshots of your working application
+
+## Resources
+
+- [MongoDB Documentation](https://docs.mongodb.com/)
+- [Express.js Documentation](https://expressjs.com/)
+- [React Documentation](https://react.dev/)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [Mongoose Documentation](https://mongoosejs.com/docs/) 
