@@ -31,7 +31,7 @@ const allowedOrigins = [
 //     credentials: true,
 //   })
 // );
-
+// Temporary: Allow all origins for testing
 app.use(
   cors({
     origin: "*", // ✅ Allow all origins
