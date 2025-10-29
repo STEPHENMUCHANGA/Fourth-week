@@ -8,7 +8,7 @@ export default function Dashboard(){
   const [myCourses, setMyCourses] = useState([]);
 
   useEffect(()=>{
-    axios.get('/api/courses').then(res=> setMyCourses(res.data)).catch(console.error)
+    axios.get('/courses').then(res=> setMyCourses(res.data)).catch(console.error)
   },[])
 
   return (
