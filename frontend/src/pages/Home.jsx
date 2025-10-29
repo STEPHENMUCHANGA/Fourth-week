@@ -9,9 +9,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
           <h1 className="text-2xl font-bold text-blue-600">SmartLearner</h1>
           <nav className="flex gap-6 text-gray-600 font-medium">
-            <Link to="/dashboard" className="hover:text-blue-600 transition">
-              Dashboard
-            </Link>
             <Link to="/courses" className="hover:text-blue-600 transition">
               Courses
             </Link>
