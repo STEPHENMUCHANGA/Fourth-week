@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 // ✅ CORS configuration
 const allowedOrigins = [
   'http://localhost:5173', // local Vite dev server
-  'https://fourthweek-git-main-stephens-projects-53508f27.vercel.app', // your live frontend on Vercel
+  'https://fourth-week.onrender.com/api', // your live frontend on Vercel
 ];
 
 app.use(
