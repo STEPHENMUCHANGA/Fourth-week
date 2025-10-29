@@ -32,14 +32,20 @@ const allowedOrigins = [
 //   })
 // );
 // Temporary: Allow all origins for testing
-app.use(
-  cors({
-    origin: "*", // ✅ Allow all origins
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true
-  })
-);
+// app.use(
+//   cors({
+//     origin: "*", // ✅ Allow all origins
+//     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//     credentials: true
+//   })
+// );
+
+
+app.use(cors({
+  origin: "*", // allow all origins (for testing)
+  credentials: true
+}));
 // Middleware setup
 app.use(express.json());
 app.use(cookieParser());
