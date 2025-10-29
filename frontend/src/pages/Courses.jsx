@@ -6,7 +6,8 @@ export default function Courses() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    api.get("/courses")
+    api
+      .get("/courses")
       .then(res => setCourses(res.data))
       .catch(err => console.error("Error fetching courses:", err));
   }, []);
