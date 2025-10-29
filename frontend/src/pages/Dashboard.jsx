@@ -1,14 +1,17 @@
 
 import React, { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../context/AuthContext'
-import axios from 'axios'
+import api from '../api'
 
 export default function Dashboard(){
   const { user, logout } = useContext(AuthContext);
   const [myCourses, setMyCourses] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(()=>{
-    axios.get('/courses').then(res=> setMyCourses(res.data)).catch(console.error)
+    api.get('/courses')
+      .then(res=> setMyCourses(res.data))
+      .catch(err=> setError(err))
   },[])
 
   return (
