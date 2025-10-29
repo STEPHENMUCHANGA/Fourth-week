@@ -14,7 +14,7 @@ export default function Courses() {
 
   return (
     <div>
-      <h2 className="text-xl font-semibold mb-3">Courses</h2>
+      <h2 className="text-xl font-semibold mb-3">Available Courses</h2>
       <div className="grid gap-3">
         {courses.length > 0 ? (
           courses.map(c => (
